@@ -6,7 +6,7 @@
     <description>Recent content on Maya&#39;s Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 12 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ayoubimaya.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -20,6 +20,15 @@
       <description>I&amp;rsquo;m Maya Ayoubi. I look at numbers and tell stories.
 Aside from being able to tell you what&amp;rsquo;s hiding in the number forest, I enjoy cooking, baking, and all things involving the kitchen.
 This site is where I intertwine my experiences of software, food, odds, and ends.</description>
+    </item>
+    
+    <item>
+      <title>Yosemite Fall 2020</title>
+      <link>https://ayoubimaya.github.io/post/yosemite/</link>
+      <pubDate>Sun, 15 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ayoubimaya.github.io/post/yosemite/</guid>
+      <description>Falling in love with Yosemite in the fall.</description>
     </item>
     
     <item>
