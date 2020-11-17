@@ -7,10 +7,10 @@
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer">
-    
+    <meta name="description" content="">
 
     
-      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400|Old+Standard+TT:400&display=swap' rel='stylesheet' type='text/css'>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400|Old+Standard+TT:400&display=swap" rel="stylesheet" media="print" type="text/css" onload="this.media='all'">
     
 
     <title>
@@ -56,13 +56,8 @@
     display: block;
   }
 
-  .left-justify {
-    float: left;
-  }
-
-  .right-justify {
-    float:right;
-  }
+  .left-justify { float: left; }
+  .right-justify { float:right; }
 
   pre, code {
     font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
@@ -293,11 +288,17 @@
   }
 
   #links {
+    display: flex;
+    justify-content: space-between;
     margin: 50px 0 0 0;
   }
 
+  #links :nth-child(1) {
+    margin-right:0.5em;;
+  }
+
   #links :nth-child(2) {
-    float:right;
+    margin-left:0.5em;;
   }
 
   #not-found {
@@ -379,28 +380,6 @@
       font-size:12px;
     }
   }
-
-  @media (prefers-color-scheme: light) {
-    *, #nav h1 a {
-      color: #FDFDFD;
-    }
-
-    body {
-      background: #121212;
-    }
-
-    pre, code {
-      background-color: #262626;
-    }
-
-    #sub-header, .date {
-      color: #BABABA;
-    }
-
-    hr {
-      background: #EBEBEB;
-    }
-  }
 </style>
 
 
@@ -428,49 +407,63 @@
       <li>
         <h2><a href="https://ayoubimaya.github.io/post/about/">About</a></h2>
         <div class=date>
-          May 2020
+          
+            May 2020
+          
         </div>
       </li>
     
       <li>
         <h2><a href="https://ayoubimaya.github.io/post/yosemite/">Yosemite Fall 2020</a></h2>
         <div class=date>
-          November 2020
+          
+            November 2020
+          
         </div>
       </li>
     
       <li>
         <h2><a href="https://ayoubimaya.github.io/post/hummus/">Hummus Recipe</a></h2>
         <div class=date>
-          May 2020
+          
+            May 2020
+          
         </div>
       </li>
     
       <li>
         <h2><a href="https://ayoubimaya.github.io/post/knafeh/">Knafeh Recipe</a></h2>
         <div class=date>
-          May 2020
+          
+            May 2020
+          
         </div>
       </li>
     
       <li>
         <h2><a href="https://ayoubimaya.github.io/post/shakshouka/">Shakshouka Recipe</a></h2>
         <div class=date>
-          May 2020
+          
+            May 2020
+          
         </div>
       </li>
     
       <li>
         <h2><a href="https://ayoubimaya.github.io/post/baklawa/">Baklawa Recipe</a></h2>
         <div class=date>
-          May 2020
+          
+            May 2020
+          
         </div>
       </li>
     
       <li>
         <h2><a href="https://ayoubimaya.github.io/post/halaweteljibn/">Halawet El Jibn Recipe</a></h2>
         <div class=date>
-          May 2020
+          
+            May 2020
+          
         </div>
       </li>
     
