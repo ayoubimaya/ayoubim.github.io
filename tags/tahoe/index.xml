@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tahoe on Maya&#39;s Notes</title>
+    <link>https://ayoubimaya.github.io/tags/tahoe/</link>
+    <description>Recent content in tahoe on Maya&#39;s Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 08 Dec 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://ayoubimaya.github.io/tags/tahoe/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tahoe Winter 2020</title>
+      <link>https://ayoubimaya.github.io/post/tahoe/</link>
+      <pubDate>Tue, 08 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ayoubimaya.github.io/post/tahoe/</guid>
+      <description>A single bench in the snow covered woods. Cool waterfalls snaking down smooth rocks. A perfect blue lake that could fool anyone to jump in even on a winter day. This is Tahoe.</description>
+    </item>
+    
+  </channel>
+</rss>
