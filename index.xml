@@ -6,7 +6,7 @@
     <description>Recent content on Maya&#39;s Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 08 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Feb 2021 13:11:43 -0700</lastBuildDate>
     
 	<atom:link href="https://ayoubimaya.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -20,6 +20,16 @@
       <description>I&amp;rsquo;m Maya Ayoubi. I look at numbers and tell stories.
 Aside from being able to tell you what&amp;rsquo;s hiding in the number forest, I enjoy cooking, baking, and all things involving the kitchen.
 This site is where I intertwine my experiences of software, food, odds, and ends.</description>
+    </item>
+    
+    <item>
+      <title>Talks</title>
+      <link>https://ayoubimaya.github.io/post/talks/</link>
+      <pubDate>Tue, 23 Feb 2021 13:11:43 -0700</pubDate>
+      
+      <guid>https://ayoubimaya.github.io/post/talks/</guid>
+      <description> My small (but growing) list of talks I have given ordering from newest to oldest.
+ Visualizing the Vaccine with Pandas and Prophet Exploring 250+ Python Applications (Awesomely)  Visualizing the Vaccine with Pandas and Prophet  Date: February 23, 2021 Duration: 7 minutes Venue: Pyninsula #28 Notebook Video  Exploring 250+ Python Applications (Awesomely)  Date: September 24, 2019 Duration: 11 minutes Venue: Pyninsula #21, Mountain View, California Notebook Video  </description>
     </item>
     
     <item>

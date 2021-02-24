@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>talks on Maya&#39;s Notes</title>
+    <link>https://ayoubimaya.github.io/tags/talks/</link>
+    <description>Recent content in talks on Maya&#39;s Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 23 Feb 2021 13:11:43 -0700</lastBuildDate>
+    
+	<atom:link href="https://ayoubimaya.github.io/tags/talks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Talks</title>
+      <link>https://ayoubimaya.github.io/post/talks/</link>
+      <pubDate>Tue, 23 Feb 2021 13:11:43 -0700</pubDate>
+      
+      <guid>https://ayoubimaya.github.io/post/talks/</guid>
+      <description> My small (but growing) list of talks I have given ordering from newest to oldest.
+ Visualizing the Vaccine with Pandas and Prophet Exploring 250+ Python Applications (Awesomely)  Visualizing the Vaccine with Pandas and Prophet  Date: February 23, 2021 Duration: 7 minutes Venue: Pyninsula #28 Notebook Video  Exploring 250+ Python Applications (Awesomely)  Date: September 24, 2019 Duration: 11 minutes Venue: Pyninsula #21, Mountain View, California Notebook Video  </description>
+    </item>
+    
+  </channel>
+</rss>
