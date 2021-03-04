@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<meta name="generator" content="Hugo 0.70.0" />
     <meta charset="utf-8">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -16,10 +15,10 @@
     <title>
       
       
-         Maya&#39;s Notes 
+         Visualizing the Vaccine 
       
     </title>
-    <link rel="canonical" href="https://ayoubimaya.github.io/">
+    <link rel="canonical" href="https://ayoubimaya.github.io/post/vizvax/">
 
     <style>
   * {
@@ -383,7 +382,6 @@
 </style>
 
 
-    <link rel="alternate" type="application/rss+xml" href="https://ayoubimaya.github.io/index.xml" title="Maya's Notes" />
     </head>
 
   <body>
@@ -404,112 +402,92 @@
 
 
 <section id=content>
-  <ul class=posts_listing>
+  <h1> Visualizing the Vaccine </h1>
+
+  
+    <div id=sub-header>
+      March 2021 · 3 minute read
+    </div>
+  
+
+  <div class="entry-content">
     
-      <li>
-        <h2><a href="https://ayoubimaya.github.io/post/about/">About</a></h2>
-        <div class=date>
-          
-            May 2020
-          
-        </div>
-      </li>
+
+<p>As I am writing this, it’s been a few months since the initial vaccinations have taken place and I find myself Googling COVID-19 related news more than ever. Some of my questions have been:</p>
+
+<p><center> &ldquo;What types of vaccines are used?&rdquo;</p>
+
+<p>&ldquo;What country is vaccinating the most?&rdquo;</p>
+
+<p>&ldquo;How fast is the US vaccinating?&rdquo;</p>
+
+<p>&ldquo;What state is vaccinating the most?&rdquo;</p>
+
+<p>&ldquo;When will I be eligible for a vaccine?&rdquo; </center></p>
+
+<p>Needless to say, I wanted all the information I could get my hands on. Fortunately, there are datasets that can answer my questions. The data was used comes from Our World in Data’s <a href="https://github.com/owid/covid-19-data">GitHub repository</a>, <a href="https://www.kaggle.com/gpreda/covid-world-vaccination-progress/">Kaggle</a>, and a dataset that can be found on my <a href="https://github.com/ayoubimaya/COVID19-Vaccination-Progress/blob/main/datasets/State_Postal_Codes.csv">Visualizing the Vaccine repository</a>.Let’s get started!</p>
+
+<h2 id="center-what-countries-are-using-mrna-non-mrna-or-both-center"><center>What countries are using mRNA, non-mRNA, or both?</center></h2>
+
+<iframe width="800" height="700" frameborder="0" scrolling="no" src="//plotly.com/~mayoubi/1.embed"></iframe>
+
+<p>We see some interesting geopolitics happening here. Most of the Global South uses non-mRNA vaccines, while most of the Global North uses mRNA vaccines. Of course, we see that we have some Global North countries in Europe for example, who use both mRNA and non-mRNA vaccines.</p>
+
+<h2 id="center-what-countries-are-vaccinating-the-fastest-center"><center>What countries are vaccinating the fastest?</center></h2>
+
+<p>Next, I wanted to look at the top countries with the most vaccinations per hundred. I wanted to filter on populations greater than 10 million, to compare the United States with other larger countries.</p>
+
+<iframe width="900" height="600" frameborder="0" scrolling="no" src="//plotly.com/~mayoubi/4.embed"></iframe>
+
+<p>In this order, Great Britain, United States, Chile, Turkey, Morocco, Poland, Greece, Portugal, Spain, and Romania. We see that Great Britain is in the lead with 30% of vaccinations, the United States at 20%, Chile at 18% and all other countries with &lt;= 10% vaccinations.</p>
+
+<h2 id="center-how-do-these-countries-look-over-time-center"><center>How do these countries look over time?</center></h2>
+
+<iframe width="900" height="600" frameborder="0" scrolling="no" src="//plotly.com/~mayoubi/6.embed"></iframe>
+
+<p>Looking at countries like Great Britain and Chile, we see they started off with an upward trend, but have more recently seen dramatic dips. The United States, on the other hand, experienced a slight dip in daily vaccinations in mid February, but more recently has seen an upward trend.</p>
+
+<h2 id="center-how-well-are-the-states-doing-in-vaccinating-center"><center>How well are the states doing in vaccinating?</center></h2>
+
+<iframe width="900" height="700" frameborder="0" scrolling="no" src="//plotly.com/~mayoubi/8.embed"></iframe>
+
+<p>As far as total vaccinations per hundred is concerned, states like Alaska, New Mexico, North Dakota, and South Dakota are the leaders. My initial hypothesis that states with higher density of people vaccinate more proved to be false. Apparently, states with spread out, smaller populations perform better.</p>
+
+<h2 id="center-what-are-the-united-states-total-vaccinationss-over-time-center"><center>What are the United States total vaccinationss over time?</center></h2>
+
+<iframe width="900" height="600" frameborder="0" scrolling="no" src="//plotly.com/~mayoubi/10.embed"></iframe>
+
+<p>Looks like we have some great news! Overall, the United States total vaccinations has increased exponentially.</p>
+
+<h2 id="center-will-we-reach-150-million-vaccinations-in-100-days-center"><center>Will we reach 150 million vaccinations in 100 days?</center></h2>
+
+<p>On January 25, 2021, President Joe Biden pledged 150 million vaccinations in 100 days. Let&rsquo;s see what the data can tell us!</p>
+
+<p>For this prediction, I used Prophet from FBProphet since the docs say it handles seasonality and missing data really well. Another reason I used Prophet is because it allows you to choose between two modes of predictions; linear and logistic. Logistic is used when you have a known cap for your prediction and in our case, we know that the number of vaccinations cannot exceed the population of the United States.</p>
+
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~mayoubi/12.embed"></iframe>
+
+<p>According to Prophet, by April 30, we expect around 220 million vaccinations, meaning shots in arms. It looks like Joe Biden’s prediction may be a little conservative!</p>
+
+<p>Although time may seem to be moving slow, we are well on our way to vaccinating the population. If you’ve made it this far in this blog post, I hope you are able to walk away with a much more positive outlook on what the future has in store!</p>
+
+<p>My Jupyter Notebook with these plots can be found <a href="https://bit.ly/vizvax2021">here</a>.</p>
+
+  </div>
+
+  <div id=links>
     
-      <li>
-        <h2><a href="https://ayoubimaya.github.io/post/vizvax/">Visualizing the Vaccine</a></h2>
-        <div class=date>
-          
-            March 2021
-          
-        </div>
-      </li>
+      <a href="https://ayoubimaya.github.io/post/talks/">&laquo;&nbsp;Talks</a>
     
-      <li>
-        <h2><a href="https://ayoubimaya.github.io/post/talks/">Talks</a></h2>
-        <div class=date>
-          
-            February 2021
-          
-        </div>
-      </li>
     
-      <li>
-        <h2><a href="https://ayoubimaya.github.io/post/tahoe/">Tahoe Winter 2020</a></h2>
-        <div class=date>
-          
-            December 2020
-          
-        </div>
-      </li>
+      <a href="https://ayoubimaya.github.io/post/about/">About&nbsp;&raquo;</a>
     
-      <li>
-        <h2><a href="https://ayoubimaya.github.io/post/philosophy_vs_ideology/">Philosophy vs Ideology</a></h2>
-        <div class=date>
-          
-            November 2020
-          
-        </div>
-      </li>
-    
-      <li>
-        <h2><a href="https://ayoubimaya.github.io/post/yosemite/">Yosemite Fall 2020</a></h2>
-        <div class=date>
-          
-            November 2020
-          
-        </div>
-      </li>
-    
-      <li>
-        <h2><a href="https://ayoubimaya.github.io/post/hummus/">Hummus Recipe</a></h2>
-        <div class=date>
-          
-            May 2020
-          
-        </div>
-      </li>
-    
-      <li>
-        <h2><a href="https://ayoubimaya.github.io/post/knafeh/">Knafeh Recipe</a></h2>
-        <div class=date>
-          
-            May 2020
-          
-        </div>
-      </li>
-    
-      <li>
-        <h2><a href="https://ayoubimaya.github.io/post/shakshouka/">Shakshouka Recipe</a></h2>
-        <div class=date>
-          
-            May 2020
-          
-        </div>
-      </li>
-    
-      <li>
-        <h2><a href="https://ayoubimaya.github.io/post/baklawa/">Baklawa Recipe</a></h2>
-        <div class=date>
-          
-            May 2020
-          
-        </div>
-      </li>
-    
-      <li>
-        <h2><a href="https://ayoubimaya.github.io/post/halaweteljibn/">Halawet El Jibn Recipe</a></h2>
-        <div class=date>
-          
-            May 2020
-          
-        </div>
-      </li>
-    
-  </ul>
+  </div>
 </section>
 
   
 </body>
 </html>
+
 
 

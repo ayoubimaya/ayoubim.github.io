@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>analysis on Maya&#39;s Notes</title>
+    <link>https://ayoubimaya.github.io/tags/analysis/</link>
+    <description>Recent content in analysis on Maya&#39;s Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 04 Mar 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://ayoubimaya.github.io/tags/analysis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Visualizing the Vaccine</title>
+      <link>https://ayoubimaya.github.io/post/vizvax/</link>
+      <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ayoubimaya.github.io/post/vizvax/</guid>
+      <description>As I am writing this, it’s been a few months since the initial vaccinations have taken place and I find myself Googling COVID-19 related news more than ever. Some of my questions have been:
+ &amp;ldquo;What types of vaccines are used?&amp;rdquo;
+&amp;ldquo;What country is vaccinating the most?&amp;rdquo;
+&amp;ldquo;How fast is the US vaccinating?&amp;rdquo;
+&amp;ldquo;What state is vaccinating the most?&amp;rdquo;
+&amp;ldquo;When will I be eligible for a vaccine?&amp;rdquo; 
+Needless to say, I wanted all the information I could get my hands on.</description>
+    </item>
+    
+  </channel>
+</rss>
