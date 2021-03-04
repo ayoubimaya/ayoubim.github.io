@@ -425,7 +425,7 @@
 
 <p>&ldquo;When will I be eligible for a vaccine?&rdquo; </center></p>
 
-<p>Needless to say, I wanted all the information I could get my hands on. Fortunately, there are datasets that can answer my questions. The data was used comes from Our World in Data’s <a href="https://github.com/owid/covid-19-data">GitHub repository</a>, <a href="https://www.kaggle.com/gpreda/covid-world-vaccination-progress/">Kaggle</a>, and a dataset that can be found on my <a href="https://github.com/ayoubimaya/COVID19-Vaccination-Progress/blob/main/datasets/State_Postal_Codes.csv">Visualizing the Vaccine repository</a>.Let’s get started!</p>
+<p>Needless to say, I wanted all the information I could get my hands on. Fortunately, there are datasets that can answer my questions. The data used comes from Our World in Data’s <a href="https://github.com/owid/covid-19-data">GitHub repository</a>, <a href="https://www.kaggle.com/gpreda/covid-world-vaccination-progress/">Kaggle</a>, and a dataset that can be found on my <a href="https://github.com/ayoubimaya/COVID19-Vaccination-Progress/blob/main/datasets/State_Postal_Codes.csv">Visualizing the Vaccine repository</a>. Let’s get started!</p>
 
 <h2 id="center-what-countries-are-using-mrna-non-mrna-or-both-center"><center>What countries are using mRNA, non-mRNA, or both?</center></h2>
 
@@ -463,15 +463,17 @@
 
 <p>On January 25, 2021, President Joe Biden pledged 150 million vaccinations in 100 days. Let&rsquo;s see what the data can tell us!</p>
 
-<p>For this prediction, I used Prophet from FBProphet since the docs say it handles seasonality and missing data really well. Another reason I used Prophet is because it allows you to choose between two modes of predictions; linear and logistic. Logistic is used when you have a known cap for your prediction and in our case, we know that the number of vaccinations cannot exceed the population of the United States.</p>
+<p>For this prediction, I used an open source software, called <a href="https://facebook.github.io/prophet/">Prophet</a>. According to Prophet&rsquo;s docs, this forecasting prodecure handles seasonality and outlier really well without the hassle of too much tuning. Another reason to use Prophet is because it allows you to make forecasts using a logistic growth trend model with a specified carrying capacity. For our case, our carrying capacity is the population of the United States.</p>
 
 <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~mayoubi/12.embed"></iframe>
 
-<p>According to Prophet, by April 30, we expect around 220 million vaccinations, meaning shots in arms. It looks like Joe Biden’s prediction may be a little conservative!</p>
+<p>According to Prophet, by April 30, we expect around 220 million vaccinations, meaning shots in arms. It looks like President Joe Biden’s prediction may be a little conservative!</p>
 
 <p>Although time may seem to be moving slow, we are well on our way to vaccinating the population. If you’ve made it this far in this blog post, I hope you are able to walk away with a much more positive outlook on what the future has in store!</p>
 
 <p>My Jupyter Notebook with these plots can be found <a href="https://bit.ly/vizvax2021">here</a>.</p>
+
+<p>My talk on Visualizing the Vaccine can be found <a href="https://bit.ly/vizvaxvid">here</a>.</p>
 
   </div>
 
